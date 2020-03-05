@@ -1,7 +1,12 @@
 import React from "react";
+import { PageContainer } from "../../styles/containers";
 
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <PageContainer>
+      <p>Projects</p>
+    </PageContainer>
+  );
 };
 
 export default Projects;

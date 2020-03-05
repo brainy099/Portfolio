@@ -20,29 +20,29 @@ export const TransitionsItem = styled(animated.div)`
 
 export const TransitionsDiv = styled.div`
   height: 40vh;
-  width: 25vw;
+  width: 29vw;
   border: 5px solid grey;
   padding: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  -webkit-animation: fadein 4s;
+  -webkit-animation: fadein 2s;
 
   @keyframes fadein {
     0% {
       opacity: 0;
     }
-    50% {
+    40% {
       opacity: 0;
     }
-    60% {
+    100% {
       opacity: 1;
     }
   }
 `;
 
 export const HomeContainer = styled.div`
-  background: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3");
+  background: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a");
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 20vw;

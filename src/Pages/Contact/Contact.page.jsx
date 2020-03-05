@@ -1,7 +1,12 @@
 import React from "react";
+import { PageContainer } from "../../styles/containers";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <PageContainer>
+      <p>Contact</p>
+    </PageContainer>
+  );
 };
 
 export default Contact;

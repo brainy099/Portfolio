@@ -5,11 +5,11 @@ import NavTab from "../../Components/Nav-Tab/NavTab.component";
 const SideNav = () => {
   return (
     <SideNavContainer>
-      <NavTab name="099" />
-      <NavTab name="About" />
-      <NavTab name="Blog" />
-      <NavTab name="Projects" />
-      <NavTab name="Contact" />
+      <NavTab to="/" name="099" />
+      <NavTab to="/about" name="About" />
+      <NavTab to="/blog" name="Blog" />
+      <NavTab to="/projects" name="Projects" />
+      <NavTab to="/contact" name="Contact" />
     </SideNavContainer>
   );
 };
