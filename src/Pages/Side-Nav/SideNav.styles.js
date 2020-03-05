@@ -6,9 +6,11 @@ export const SideNavContainer = styled.div`
   left: 0;
   width: 20vw;
   height: 100vh;
-  background-color: #f5f5f5;
+  max-height: 100vh;
+  background-color: #cfc4ca;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;

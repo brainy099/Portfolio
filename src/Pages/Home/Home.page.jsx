@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
-import { HomeContainer, TransitionsItem } from "./Home.styles";
+import { HomeContainer, TransitionsItem, TransitionsDiv } from "./Home.styles";
 
 const Home = () => {
   const ref = useRef([]);
@@ -10,7 +10,7 @@ const Home = () => {
       opacity: 0,
       height: 0,
       innerHeight: 0,
-      transform: "perspective(600px) rotateX(0deg)",
+      transform: "perspective(500px) rotateX(0deg)",
       color: "#8fa5b6"
     },
     enter: [
@@ -31,7 +31,7 @@ const Home = () => {
     ref.current = [];
     set([]);
     ref.current.push(
-      setTimeout(() => set(["brainy099", "React", "Developer"]), 2000)
+      setTimeout(() => set(["brainy099", "React", "Developer"]), 3100)
     );
     ref.current.push(setTimeout(() => set(["brainy099", "Developer"]), 5000));
     ref.current.push(
@@ -39,16 +39,18 @@ const Home = () => {
     );
   }, []);
 
-  useEffect(() => void reset(), []);
+  useEffect(() => void reset(), [reset]);
   return (
     <HomeContainer>
-      {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-        <TransitionsItem key={key} style={rest} onClick={reset}>
-          <animated.div style={{ overflow: "hidden", height: innerHeight }}>
-            {item}
-          </animated.div>
-        </TransitionsItem>
-      ))}
+      <TransitionsDiv>
+        {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+          <TransitionsItem key={key} style={rest} onClick={reset}>
+            <animated.div style={{ overflow: "hidden", height: innerHeight }}>
+              {item}
+            </animated.div>
+          </TransitionsItem>
+        ))}
+      </TransitionsDiv>
     </HomeContainer>
   );
 };
