@@ -20,14 +20,15 @@ export const TransitionsItem = styled(animated.div)`
 
 export const TransitionsDiv = styled.div`
   height: 40vh;
-  width: 29vw;
+  width: 45vw;
   border: 5px solid grey;
   padding: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   -webkit-animation: fadein 2s;
-
+  align-items: center;
+  justify-content: center;
   @keyframes fadein {
     0% {
       opacity: 0;
@@ -45,7 +46,6 @@ export const HomeContainer = styled.div`
   background: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 20vw;
   height: 100vh;
   overflow: hidden;
   display: flex;

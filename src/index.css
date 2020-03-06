@@ -11,8 +11,6 @@ body {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #d2d2da;
@@ -21,4 +19,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

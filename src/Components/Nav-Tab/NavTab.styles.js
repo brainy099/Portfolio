@@ -15,10 +15,16 @@ export const NavTabContainer = styled(Link)`
   font-size: 1.5em;
   color: black;
   text-decoration: none;
-  :hover {
+  ${props =>
+      props.active
+        ? `background-color: #dfdde1; transform: scale(1.2);`
+        : `background-color: #cfc4ca;`}
+    :hover {
     transition: all 0.8s ease;
-    transform: scale(1.2);
-    background-color: #dfdde1;
     cursor: pointer;
+    ${props =>
+      props.active
+        ? `background-color: #cfc4ca ;`
+        : `background-color: #dfdde1; transform: scale(1.2);`}
   }
 `;
